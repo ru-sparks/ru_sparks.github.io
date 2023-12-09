@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>Bootstrap Example</title>
+</head>
+
+<body>
+
+  <!-- Centered Container for the Carousel -->
+  <!-- 
+    container: This class is part of Bootstrap and is used to create a responsive fixed-width container. 
+    It helps to center and align content while adjusting its width based on the device's screen size. 
+    It has built-in padding and margins for consistent spacing.
+    
+    d-flex: This class is also from Bootstrap and stands for "display: flex." 
+    It enables the Flexible Box Layout (Flexbox) model for the container. 
+    Flexbox is a powerful layout model that allows items within the container to be dynamically arranged based on available space.
+
+    justify-content-center: This class, again from Bootstrap, is used in conjunction with Flexbox. 
+    It aligns the content along the horizontal axis (main axis) and centers it within the flex container. 
+    In this case, it horizontally centers the content.
+
+    mt-lg-5: This class is a combination of Bootstrap spacing utility classes. 
+    It consists of mt (margin-top) for spacing and lg-5 for a large size margin top. 
+    -->
+  <div class="container d-flex justify-content-center mt-lg-5">
+    <!-- Bootstrap Carousel -->
+
+    <!-- 
+      id="imageCarousel": This sets the identifier for the HTML element, 
+      allowing you to reference it uniquely using JavaScript or CSS. 
+      In this case, the identifier is "imageCarousel."
+
+      class="carousel slide w-50": This sets multiple classes for the element, providing styling and behavior:
+
+        carousel: This class is used for creating a carousel component. 
+        A carousel is a slideshow for cycling through a series of content items.
+
+        slide: This class is specific to the Bootstrap carousel component. 
+        It indicates that the carousel should animate between slides, providing a smooth transition effect.
+
+        w-50: This class is from Bootstrap's width utility classes. It sets the width of the element to 50%, 
+        making it take up half of its containing element's width. 
+        Adjusting the width is a common way to control the size of the carousel.
+
+        data-bs-ride="carousel": This is a data attribute used by Bootstrap to enable automatic cycling of the carousel. 
+        The data-bs-ride attribute is set to "carousel," indicating that the carousel should automatically cycle through its slides. 
+        The "carousel" class is required for this attribute to function.
+     -->
+
+    <div id="imageCarousel" class="carousel slide w-50" data-bs-ride="carousel">
+      <!-- 
+        class="carousel-inner": This class is a fundamental part of the Bootstrap carousel component. 
+        It is used to define the inner container that holds the individual slides within the carousel.
+       -->
+      <div class="carousel-inner">
+        <!-- Image 1 -->
+        <!-- 
+          class="carousel-item active": This class is a crucial part of the Bootstrap carousel component. 
+          It represents an individual item (or slide) within the carousel.
+          The carousel-item class is used to define the styling and behavior of each slide.
+          The active class indicates that this particular item is the initially visible slide when the carousel loads.
+         -->
+        <div class="carousel-item active">
+          <!-- 
+              d-block: This class sets the display property of the image to block. 
+              This makes the image a block-level element, causing it to start on a new line and take up the full width of its container.
+              w-100: This class is from Bootstrap width utility classes. It sets the width of the image to 100%, 
+              making it fill the entire width of its container. 
+              This is particularly useful for ensuring that the image is responsive and adjusts to different screen sizes.
+             -->
+          <img
+            src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80"
+            
+            class="d-block w-100" alt="image">
+        </div>
+
+        <!-- Image 2 -->
+        <div class="carousel-item">
+          <img
+            src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80"
+            class="d-block w-100" alt="unsplash image">
+        </div>
+
+        <!-- Image 3 -->
+        <div class="carousel-item">
+          <img
+            src="https://images.unsplash.com/photo-1576020799627-aeac74d58064?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2615&q=80"
+            class="d-block w-100" alt="unsplash image">
+        </div>
+
+        <!-- Image 4 -->
+        <div class="carousel-item">
+          <img
+            src="https://images.unsplash.com/photo-1525974160448-038dacadcc71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2274&q=80"
+            class="d-block w-100" alt="unsplash image">
+        </div>
+
+        <!-- Image 5 -->
+        <div class="carousel-item">
+          <img
+            src="https://images.unsplash.com/photo-1610701596061-2ecf227e85b2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80"
+            class="d-block w-100" alt="unsplash image">
+        </div>
+
+        <!-- Image 6 -->
+        <div class="carousel-item">
+          <img
+            src="https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80"
+            class="d-block w-100" alt="unsplash image">
+        </div>
+
+        <!-- Image 7 -->
+        <div class="carousel-item">
+          <img
+            src="https://images.unsplash.com/photo-1605883705077-8d3d3cebe78c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80"
+            class="d-block w-100" alt="unsplash image">
+        </div>
+      </div>
+
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
